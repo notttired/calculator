@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    border: solid 3px black;
+    background-color: white;
+    
+}
+
+.display {
+    background-color: #FFF7D1;
+    display: flex;
+    justify-content: right;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.buttons>* {
+    flex: 1 1;
+}
+
+.leftSide {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.admin {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.admin .cell {
+    background-color: #FFECC8;
+}
+
+.numbers {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.numbers>ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    flex: 1 1;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    border-collapse: collapse;
+}
+
+.numbers>ul>li {
+    flex: 1 1;
+}
+
+.numbers .cell {
+    background-color: #FFD09B;
+}
+
+.rightSide {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.rightSide .cell {
+    background-color: #FFB0B0;
+}
+
+.cell {
+    margin: 5px;
+    padding: 10px;
+
+    border: solid 1px black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
